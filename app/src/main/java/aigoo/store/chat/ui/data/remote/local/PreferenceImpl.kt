@@ -1,6 +1,5 @@
 package aigoo.store.chat.ui.data.remote.local
 
-import aigoo.store.chat.ui.repository.interfaces.IPreference
 import android.content.Context
 import android.content.SharedPreferences
 import android.content.SharedPreferences.Editor
@@ -13,8 +12,7 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class PreferenceImpl
-@Inject constructor(@ApplicationContext val context: Context)
+class PreferenceImpl @Inject constructor(@ApplicationContext val context: Context)
 {
     private var sharedPreference: SharedPreferences
     private var editor: Editor

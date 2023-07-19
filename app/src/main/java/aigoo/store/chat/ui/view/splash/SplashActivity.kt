@@ -20,7 +20,7 @@ fun SplashScreen(
     startLogin: () -> Unit,
     startDashBoard: () -> Unit
 ) {
-    val viewModel: SplashViewModel = hiltViewModel<SplashViewModel>()
+    val viewModel = hiltViewModel<SplashViewModel>()
     RenderSplashScreen()
     LaunchedEffect(key1 = true) {
         delay(2000)
